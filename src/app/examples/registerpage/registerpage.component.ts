@@ -1,8 +1,8 @@
-import { Component, OnInit, OnDestroy } from "@angular/core";
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
-  selector: "app-registerpage",
-  templateUrl: "registerpage.component.html"
+  selector: 'app-registerpage',
+  templateUrl: 'registerpage.component.html'
 })
 export class RegisterpageComponent implements  OnInit, OnDestroy {
   focus;
@@ -13,8 +13,8 @@ export class RegisterpageComponent implements  OnInit, OnDestroy {
   constructor() {}
 
   ngOnInit() {
-    var body = document.getElementsByTagName("body")[0];
-    body.classList.add("register-page");
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.add('register-page');
 
     const signUpButton = document.getElementById('signUp');
     const signInButton = document.getElementById('signIn');
@@ -29,7 +29,7 @@ export class RegisterpageComponent implements  OnInit, OnDestroy {
     });
   }
   ngOnDestroy(){
-    var body = document.getElementsByTagName("body")[0];
-    body.classList.remove("register-page");
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.remove('register-page');
   }
 }

@@ -1,18 +1,18 @@
-import { Component, OnInit, OnDestroy } from "@angular/core";
-import Glide from "@glidejs/glide";
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import Glide from '@glidejs/glide';
 import Choices from 'choices.js';
 
 @Component({
-  selector: "app-productpage",
-  templateUrl: "productpage.component.html"
+  selector: 'app-productpage',
+  templateUrl: 'productpage.component.html'
 })
 export class ProductpageComponent implements OnInit, OnDestroy {
 
   constructor() {}
 
   ngOnInit() {
-    var body = document.getElementsByTagName("body")[0];
-    body.classList.add("product-page");
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.add('product-page');
 
     new Glide('.testimonial-glide', {
       type: 'carousel',
@@ -45,12 +45,12 @@ export class ProductpageComponent implements OnInit, OnDestroy {
       ]
     }).mount();
 
-    new Choices('#choices-single-default', {
+    const choice = new Choices('#choices-single-default', {
       searchEnabled: false,
     });
   }
   ngOnDestroy(){
-    var body = document.getElementsByTagName("body")[0];
-    body.classList.remove("product-page");
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.remove('product-page');
   }
 }

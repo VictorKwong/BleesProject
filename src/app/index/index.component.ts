@@ -1,12 +1,12 @@
-import { Component, OnInit, OnDestroy, HostListener } from "@angular/core";
-import noUiSlider from "nouislider";
+import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
+import noUiSlider from 'nouislider';
 import Choices from 'choices.js';
-import { Router } from "@angular/router";
+import { Router } from '@angular/router';
 import flatpickr from 'flatpickr';
 
 @Component({
-  selector: "app-index",
-  templateUrl: "index.component.html"
+  selector: 'app-index',
+  templateUrl: 'index.component.html'
 })
 export class IndexComponent implements OnInit, OnDestroy {
   focus;
@@ -51,9 +51,9 @@ export class IndexComponent implements OnInit, OnDestroy {
       this.isCollapsed = true;
     });
   }
-  @HostListener("window:scroll", ["$event"])
+  @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
-    var buttonScrollTop = document.getElementsByClassName('back-to-top')[0];
+    const buttonScrollTop = document.getElementsByClassName('back-to-top')[0];
     if (window.pageYOffset > 100 && buttonScrollTop) {
         buttonScrollTop.classList.add('show');
     }
@@ -62,7 +62,7 @@ export class IndexComponent implements OnInit, OnDestroy {
     }
   }
   scrollTop(element: any) {
-    element.scrollIntoView({ behavior: "smooth" });
+    element.scrollIntoView({ behavior: 'smooth' });
   }
   ngOnInit() {
     // Datepicker
@@ -70,32 +70,32 @@ export class IndexComponent implements OnInit, OnDestroy {
 
     // Datepicker - range
     flatpickr('.range', {
-      mode: "range"
+      mode: 'range'
     });
 
     // DateTimePicker
     flatpickr('.datetimepicker', {
       enableTime: true,
-      dateFormat: "Y-m-d H:i",
+      dateFormat: 'Y-m-d H:i',
     });
 
-    var body = document.getElementsByTagName("body")[0];
-    body.classList.add("index-page");
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.add('index-page');
 
-    var navbar = document.getElementById("navbar-main");
-    navbar.classList.add("navbar-transparent");
+    const navbar = document.getElementById('navbar-main');
+    navbar.classList.add('navbar-transparent');
 
 
-    var choicesSingle = document.getElementById('choices-single-default');
+    const choicesSingle = document.getElementById('choices-single-default');
     if (choicesSingle) {
-      new Choices(choicesSingle, {
+      const choice = new Choices(choicesSingle, {
         searchEnabled: false,
       });
     }
 
-    var choicesMultiple = document.getElementById('choices-multiple-default');
+    const choicesMultiple = document.getElementById('choices-multiple-default');
     if (choicesMultiple) {
-      new Choices('#choices-multiple-default', {
+      const choice = new Choices('#choices-multiple-default', {
           searchEnabled: true,
           delimiter: ',',
           editItems: true,
@@ -103,10 +103,10 @@ export class IndexComponent implements OnInit, OnDestroy {
         });
     }
 
-    var badges = document.getElementById('badges');
+    const badges = document.getElementById('badges');
     if (badges) {
       // Activate Tags
-      new Choices(badges, {
+      const choice = new Choices(badges, {
         delimiter: ',',
         maxItemCount: 5,
         editItems: true,
@@ -115,7 +115,7 @@ export class IndexComponent implements OnInit, OnDestroy {
       });
     }
 
-    var slider = document.getElementById("sliderRegular");
+    const slider = document.getElementById('sliderRegular');
 
     noUiSlider.create(slider, {
       start: 40,
@@ -126,7 +126,7 @@ export class IndexComponent implements OnInit, OnDestroy {
       }
     });
 
-    var slider2 = document.getElementById("sliderDouble");
+    const slider2 = document.getElementById('sliderDouble');
 
     noUiSlider.create(slider2, {
       start: [20, 60],
@@ -138,10 +138,10 @@ export class IndexComponent implements OnInit, OnDestroy {
     });
   }
   ngOnDestroy() {
-    var body = document.getElementsByTagName("body")[0];
-    body.classList.remove("index-page");
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.remove('index-page');
 
-    var navbar = document.getElementById("navbar-main");
-    navbar.classList.remove("navbar-transparent");
+    const navbar = document.getElementById('navbar-main');
+    navbar.classList.remove('navbar-transparent');
   }
 }

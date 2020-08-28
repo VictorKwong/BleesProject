@@ -1,9 +1,9 @@
-import { Component, OnInit, OnDestroy } from "@angular/core";
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import Choices from 'choices.js';
 
 @Component({
-  selector: "app-accountsettings",
-  templateUrl: "accountsettings.component.html"
+  selector: 'app-accountsettings',
+  templateUrl: 'accountsettings.component.html'
 })
 export class AccountsettingsComponent implements OnInit, OnDestroy {
   focus;
@@ -15,13 +15,13 @@ export class AccountsettingsComponent implements OnInit, OnDestroy {
   constructor() {}
 
   ngOnInit() {
-    var body = document.getElementsByTagName("body")[0];
-    body.classList.add("account-settings");
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.add('account-settings');
 
-    new Choices('#choices-single-default', {
+    const choice = new Choices('#choices-single-default', {
       searchEnabled: false,
     });
-    new Choices('#badges', {
+    const badge = new Choices('#badges', {
       delimiter: ',',
       editItems: true,
       maxItemCount: 5,
@@ -29,7 +29,7 @@ export class AccountsettingsComponent implements OnInit, OnDestroy {
     });
   }
   ngOnDestroy(){
-    var body = document.getElementsByTagName("body")[0];
-    body.classList.remove("account-settings");
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.remove('account-settings');
   }
 }

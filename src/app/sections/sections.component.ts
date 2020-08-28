@@ -1,10 +1,10 @@
-import { Component, OnInit, OnDestroy } from "@angular/core";
-import Glide from "@glidejs/glide";
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import Glide from '@glidejs/glide';
 declare const google: any;
 
 @Component({
-  selector: "app-sections",
-  templateUrl: "sections.component.html"
+  selector: 'app-sections',
+  templateUrl: 'sections.component.html'
 })
 export class SectionsComponent implements OnInit, OnDestroy {
 
@@ -27,10 +27,10 @@ export class SectionsComponent implements OnInit, OnDestroy {
   constructor() {}
 
   ngOnInit() {
-    var body = document.getElementsByTagName("body")[0];
-    body.classList.add("sections-page");
-    var navbar = document.getElementById("navbar-main");
-    navbar.classList.add("bg-default");
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.add('sections-page');
+    const navbar = document.getElementById('navbar-main');
+    navbar.classList.add('bg-default');
 
 
     // Carousel
@@ -53,166 +53,166 @@ export class SectionsComponent implements OnInit, OnDestroy {
     }).mount();
 
 
-    var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
-    var mapOptions = {
+    let myLatlng = new google.maps.LatLng(40.748817, -73.985428);
+    let mapOptions = {
       zoom: 13,
       center: myLatlng,
-      scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
+      scrollwheel: false, // we disable de scroll over the map, it is a really annoing when you scroll through page
       styles: [{
-          "featureType": "administrative",
-          "elementType": "labels.text.fill",
-          "stylers": [{
-            "color": "#444444"
+          featureType: 'administrative',
+          elementType: 'labels.text.fill',
+          stylers: [{
+            color: '#444444'
           }]
         },
         {
-          "featureType": "landscape",
-          "elementType": "all",
-          "stylers": [{
-            "color": "#f2f2f2"
+          featureType: 'landscape',
+          elementType: 'all',
+          stylers: [{
+            color: '#f2f2f2'
           }]
         },
         {
-          "featureType": "poi",
-          "elementType": "all",
-          "stylers": [{
-            "visibility": "off"
+          featureType: 'poi',
+          elementType: 'all',
+          stylers: [{
+            visibility: 'off'
           }]
         },
         {
-          "featureType": "road",
-          "elementType": "all",
-          "stylers": [{
-            "saturation": -100
+          featureType: 'road',
+          elementType: 'all',
+          stylers: [{
+            saturation: -100
           }, {
-            "lightness": 45
+            lightness: 45
           }]
         },
         {
-          "featureType": "road.highway",
-          "elementType": "all",
-          "stylers": [{
-            "visibility": "simplified"
+          featureType: 'road.highway',
+          elementType: 'all',
+          stylers: [{
+            visibility: 'simplified'
           }]
         },
         {
-          "featureType": "road.arterial",
-          "elementType": "labels.icon",
-          "stylers": [{
-            "visibility": "off"
+          featureType: 'road.arterial',
+          elementType: 'labels.icon',
+          stylers: [{
+            visibility: 'off'
           }]
         },
         {
-          "featureType": "transit",
-          "elementType": "all",
-          "stylers": [{
-            "visibility": "off"
+          featureType: 'transit',
+          elementType: 'all',
+          stylers: [{
+            visibility: 'off'
           }]
         },
         {
-          "featureType": "water",
-          "elementType": "all",
-          "stylers": [{
-            "color": "#C5CBF5"
+          featureType: 'water',
+          elementType: 'all',
+          stylers: [{
+            color: '#C5CBF5'
           }, {
-            "visibility": "on"
+            visibility: 'on'
           }]
         }
       ]
     };
 
-    var map = new google.maps.Map(document.getElementById("map-contactus-1"), mapOptions);
+    let map = new google.maps.Map(document.getElementById('map-contactus-1'), mapOptions);
 
-    var marker = new google.maps.Marker({
+    let marker = new google.maps.Marker({
       position: myLatlng,
-      title: "Hello World!"
+      title: 'Hello World!'
     });
 
     // To add the marker to the map, call setMap();
     marker.setMap(map);
 
-    var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
-    var mapOptions = {
+    myLatlng = new google.maps.LatLng(40.748817, -73.985428);
+    mapOptions = {
       zoom: 13,
       center: myLatlng,
-      scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
+      scrollwheel: false, // we disable de scroll over the map, it is a really annoing when you scroll through page
       styles: [{
-          "featureType": "administrative",
-          "elementType": "labels.text.fill",
-          "stylers": [{
-            "color": "#444444"
+          featureType: 'administrative',
+          elementType: 'labels.text.fill',
+          stylers: [{
+            color: '#444444'
           }]
         },
         {
-          "featureType": "landscape",
-          "elementType": "all",
-          "stylers": [{
-            "color": "#f2f2f2"
+          featureType: 'landscape',
+          elementType: 'all',
+          stylers: [{
+            color: '#f2f2f2'
           }]
         },
         {
-          "featureType": "poi",
-          "elementType": "all",
-          "stylers": [{
-            "visibility": "off"
+          featureType: 'poi',
+          elementType: 'all',
+          stylers: [{
+            visibility: 'off'
           }]
         },
         {
-          "featureType": "road",
-          "elementType": "all",
-          "stylers": [{
-            "saturation": -100
+          featureType: 'road',
+          elementType: 'all',
+          stylers: [{
+            saturation: -100
           }, {
-            "lightness": 45
+            lightness: 45
           }]
         },
         {
-          "featureType": "road.highway",
-          "elementType": "all",
-          "stylers": [{
-            "visibility": "simplified"
+          featureType: 'road.highway',
+          elementType: 'all',
+          stylers: [{
+            visibility: 'simplified'
           }]
         },
         {
-          "featureType": "road.arterial",
-          "elementType": "labels.icon",
-          "stylers": [{
-            "visibility": "off"
+          featureType: 'road.arterial',
+          elementType: 'labels.icon',
+          stylers: [{
+            visibility: 'off'
           }]
         },
         {
-          "featureType": "transit",
-          "elementType": "all",
-          "stylers": [{
-            "visibility": "off"
+          featureType: 'transit',
+          elementType: 'all',
+          stylers: [{
+            visibility: 'off'
           }]
         },
         {
-          "featureType": "water",
-          "elementType": "all",
-          "stylers": [{
-            "color": "#C5CBF5"
+          featureType: 'water',
+          elementType: 'all',
+          stylers: [{
+            color: '#C5CBF5'
           }, {
-            "visibility": "on"
+            visibility: 'on'
           }]
         }
       ]
     };
 
-    var map = new google.maps.Map(document.getElementById("map-contactus-2"), mapOptions);
+    map = new google.maps.Map(document.getElementById('map-contactus-2'), mapOptions);
 
-    var marker = new google.maps.Marker({
+    marker = new google.maps.Marker({
       position: myLatlng,
-      title: "Hello World!"
+      title: 'Hello World!'
     });
 
     // To add the marker to the map, call setMap();
     marker.setMap(map);
   }
   ngOnDestroy() {
-    var body = document.getElementsByTagName("body")[0];
-    body.classList.remove("sections-page");
-    var navbar = document.getElementById("navbar-main");
-    navbar.classList.remove("bg-default");
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.remove('sections-page');
+    const navbar = document.getElementById('navbar-main');
+    navbar.classList.remove('bg-default');
   }
 }
