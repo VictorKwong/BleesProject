@@ -9,7 +9,6 @@ header {
   position: relative;
   overflow: hidden;
   display: flex;
-  align-items: center;
 
   .carousel .carousel-indicators {
     bottom: 60px;
@@ -275,7 +274,6 @@ header {
     height: 100%;
     width: 100%;
     background-color: $primary;
-    opacity: 0.3;
     z-index: 1;
   }
 
