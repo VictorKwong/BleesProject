@@ -517,7 +517,7 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col-md-6">
-                      <div class="form-group" [ngClass]="{ 'focused': focus === true }">
+                      <div class="form-group">
                         <label> First name </label>
                         <div class="input-group mb-4">
                           <div class="input-group-prepend">
@@ -529,13 +529,13 @@
                             aria-label="First Name..."
                             class="form-control"
                             placeholder="First Name..."
-                            type="text" (blur)="focus = false" (focus)="focus = true"
+                            type="text"
                           />
                         </div>
                       </div>
                     </div>
                     <div class="col-md-6 pl-2">
-                      <div class="form-group" [ngClass]="{ 'focused': focus1 === true }">
+                      <div class="form-group">
                         <label> Last name </label>
                         <div class="input-group">
                           <div class="input-group-prepend">
@@ -547,13 +547,13 @@
                             aria-label="Last Name..."
                             class="form-control"
                             placeholder="Last Name..."
-                            type="text" (blur)="focus1 = false" (focus)="focus1 = true"
+                            type="text"
                           />
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="form-group" [ngClass]="{ 'focused': focus2 === true }">
+                  <div class="form-group">
                     <label> Email address </label>
                     <div class="input-group">
                       <div class="input-group-prepend">
@@ -564,16 +564,16 @@
                       <input
                         class="form-control"
                         placeholder="Email Here..."
-                        type="text" (blur)="focus2 = false" (focus)="focus2 = true"
+                        type="text"
                       />
                     </div>
                   </div>
-                  <div class="form-group" [ngClass]="{ 'focused': focus3 === true }">
+                  <div class="form-group">
                     <label> Your message </label>
                     <textarea
                       class="form-control"
                       id="message"
-                      name="message" (blur)="focus3 = false" (focus)="focus3 = true"
+                      name="message"
                       rows="6"
                     ></textarea>
                   </div>
@@ -610,6 +610,7 @@
         </div>
       </div>
     </div>
+    <!-- removed focus -->
 <!--   <div class="background-mail">
   <div class="container">
     <div _ngcontent-c3="" class="row justify-content-center">
