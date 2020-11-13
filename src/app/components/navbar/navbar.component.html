@@ -2,9 +2,10 @@
   class="navbar navbar-main navbar-expand-lg navbar-dark headroom"
   id="navbar-main"
 >
-  <div class="container">
+  <div class="container-custom">
     <a class="navbar-brand mr-lg-5" [routerLink]="['/index']">
-      Blees<span class="navbar-oranage">.</span>Ai
+      <!-- Blees<span class="navbar-oranage">.</span>Ai -->
+      <img src="assets/img/blees/SVG-pic/landing-page-img/blees-logo_white_font_1.png" alt="Blees logo" width="100%">
     </a>
     <button
       aria-controls="navbar_global"
@@ -46,12 +47,12 @@
         </div>
       </div>
       <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto" *ngIf="mobileView()">
-        <li class="nav-item dropdown" dropdown>
+        <li class="nav-item" dropdown>
           <a
             class="nav-link"
             data-toggle="dropdown"
             dropdownToggle
-            href="javascript:;"
+            href="#/examples/landing-page"
             role="button"
           >
             <i class="ni ni-ui-04 d-lg-none"> </i>
@@ -113,12 +114,12 @@
             </div>
           </div>
         </li>
-        <li class="nav-item dropdown" dropdown>
+        <li class="nav-item" dropdown>
           <a
             class="nav-link"
             data-toggle="dropdown"
             dropdownToggle
-            href="javascript:;"
+            href="#/examples/blog-posts"
             role="button"
           >
             <i class="ni ni-app d-lg-none"> </i>
@@ -171,11 +172,11 @@
             </a>
           </div>
         </li>
-        <li class="nav-item dropdown" dropdown>
+        <li class="nav-item" dropdown>
           <a
             class="nav-link"
             data-toggle="dropdown"
-            href="javascript:;"
+            href="#/examples/contact-us"
             dropdownToggle
             role="button"
           >
@@ -222,11 +223,11 @@
             </a>
           </div>
         </li>
-        <li class="nav-item dropdown" dropdown>
+        <li class="nav-item" dropdown>
           <a
             class="nav-link"
             data-toggle="dropdown"
-            href="javascript:;"
+            href="https://calendly.com/blees-ai/30min"
             dropdownToggle
             role="button"
           >
@@ -264,11 +265,11 @@
         </li>
       </ul>
       <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto" *ngIf="!mobileView()">
-        <li class="nav-item dropdown">
+        <li class="nav-item">
           <a
             class="nav-link"
             data-toggle="dropdown"
-            href="javascript:;"
+            href="#/examples/landing-page"
             role="button"
           >
             <i class="ni ni-ui-04 d-lg-none"> </i>
@@ -330,11 +331,11 @@
             </div>
           </div>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item">
           <a
             class="nav-link"
             data-toggle="dropdown"
-            href="javascript:;"
+            href="#/examples/blog-posts"
             role="button"
           >
             <i class="ni ni-app d-lg-none"> </i>
@@ -386,11 +387,11 @@
             </a>
           </div>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item">
           <a
             class="nav-link"
             data-toggle="dropdown"
-            href="javascript:;"
+            href="#/examples/contact-us"
             role="button"
           >
             <i class="ni ni-single-copy-04 d-lg-none"> </i>
@@ -435,11 +436,11 @@
             </a>
           </div>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item">
           <a
             class="nav-link"
             data-toggle="dropdown"
-            href="javascript:;"
+            href="https://calendly.com/blees-ai/30min"
             role="button"
           >
             <i class="ni ni-tablet-button d-lg-none"> </i>

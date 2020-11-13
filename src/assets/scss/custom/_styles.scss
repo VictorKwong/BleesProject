@@ -1,3 +1,17 @@
+/* Nav-bar */
+.container-custom{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    //remove custom-width
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
 .wrapper-custom{
     max-width: 1200px;
     width: 90%;
@@ -145,6 +159,17 @@
 .block-space{
     padding-top:12vh;
     padding-bottom: 40px;
+}
+
+/* Why Blees Ai section*/
+.why-box-first{
+    color: blue;
+}
+.why-box-second{
+    color:#007c00;
+}
+.why-box-third{
+    color: red;
 }
 
 
