@@ -1,3 +1,9 @@
+/* setup */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* Nav-bar */
 .container-custom{
     width: 100%;
@@ -71,8 +77,8 @@
     padding:10px 20px;
     cursor: pointer;
     position: absolute;
-    bottom: 10px;
-    right: 30px;
+    bottom: -50px;
+    right: 100px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -110,8 +116,8 @@
 }
 
 .img-custom{
-    width:400px;
-    height:400px;
+    width:450px;
+    height:450px;
 }
 
 .flip-flop-img{
@@ -164,6 +170,11 @@
     padding-top:12vh;
     padding-bottom: 40px;
 }
+/* How it works */
+.custom-word-des{
+    font-size: 1.1rem;
+}
+
 
 /* Why Blees Ai section*/
 .why-box-first{
@@ -176,6 +187,11 @@
     color: red;
 }
 
+/* Blog */
+.custom-space{
+    padding: 0 30px 0;
+}
+
 
 @media (max-width: 768px){
     .box-entire{
@@ -186,9 +202,12 @@
         order: 0;
     }
 }
-@media (max-width: 400px){
+@media (max-width: 450px){
     .img-custom{
         width:300px;
         height:300px;
+    }
+    .box-word{
+        width:300px
     }
 }
