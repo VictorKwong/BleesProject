@@ -7,6 +7,10 @@ Pre: Git clone
 4.ng serve
 5.localhost:4200, direction "#/examples/landing-page"
 
+Upload Production:
+1. ng build --prod
+2. npm install -g angular-cli-ghpages
+3. npx angular-cli-ghpages --dir=dist
 
 # [Argon Design System PRO Angular](http://demos.creative-tim.com/argon-design-system-pro-angular/#/index)
 
