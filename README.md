@@ -1,3 +1,13 @@
+Notes To run Website:
+
+Pre: Git clone
+1.npm install -g @angular/cli
+2.npm install
+3.set NODE_OPTIONS=--openssl-legacy-provider
+4.ng serve
+5.localhost:4200, direction "#/examples/landing-page"
+
+
 # [Argon Design System PRO Angular](http://demos.creative-tim.com/argon-design-system-pro-angular/#/index)
 
 
